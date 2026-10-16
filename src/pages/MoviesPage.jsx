@@ -14,7 +14,7 @@ export default function MoviesPage() {
         Выберите жанр. Выбранный фильтр должен храниться в адресной строке.
       </p>
 
-      <GenreFilter genres={genres} />
+      <GenreFilter />
 
       <div className="movie-grid">
         {visibleMovies.map((movie) => (

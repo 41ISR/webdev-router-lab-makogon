@@ -1,4 +1,10 @@
-export default function GenreFilter({ genres }) {
+import { useSearchParams } from "react-router-dom";
+import { genres } from "../data/movies";
+
+export default function GenreFilter() {
+  const [searchParams, setSearchParams] = useSearchParams()
+  const activeGenre = searchParams.get("genre") || ""
+
 
   return (
     <div className="genres">
